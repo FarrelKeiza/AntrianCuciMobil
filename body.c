@@ -129,28 +129,37 @@ void title(){ //screen awal berisi judul aplikasi
 	char tekan[] = "\n\
 	\t\t\t\t Tekan apapun untuk melanjutkan";
 	
-	gotoxy(15,5);
+	gotoxy(15,1);
 	for(int i = 0; welcome[i]!=0; i++){
 		Sleep(1);
 		charToASCII(welcome[i]);
 	}
 	
-	printf("\n\n");
+	printf("\n");
 	puts("\t\t      ______     ______     ______     __     __     ______     ______     __  __    ");
     puts("\t\t     /\\  ___\\   /\\  __ \\   /\\  == \\   /\\ \\  _ \\ \\   /\\  __ \\   /\\  ___\\   /\\ \\_\\ \\   ");
     puts("\t\t     \\ \\ \\____  \\ \\  __ \\  \\ \\  __<   \\ \\ \\/ '.\\ \\  \\ \\  __ \\  \\ \\___  \\  \\ \\  __ \\  ");
     puts("\t\t      \\ \\_____\\  \\ \\_\\ \\_\\  \\ \\_\\ \\_\\  \\ \\__/'.~\\_\\  \\ \\_\\ \\_\\  \\/\\_____\\  \\ \\_\\ \\_\\ ");
     puts("\t\t       \\/_____/   \\/_/\\/_/   \\/_/ /_/   \\/_/   \\/_/   \\/_/\\/_/   \\/_____/   \\/_/\\/_/ ");
-
+	printf("\n\n");
+	puts("\t\t      	                              _.-='_-         _");
+	puts("\t\t                               _.-='   _-          | ||'''''''---._______     __..");
+	puts("\t\t                   ___.===''''-.______-,,,,,,,,,,,,`-''----' ''''''       '''''  __");
+	puts("\t\t            __.--''     __        ,'                   o \\           __        [__|");
+	puts("\t\t       __-''=======.--''  ''--.=================================.--''  ''--.=======:");
+	puts("\t\t      ]       [w] : /        \\ : |========================|    : /        \\ :  [w] :");
+	puts("\t\t      V___________:|          |: |========================|    :|          |:   _-'");
+	puts("\t\t       V__________: \\        / :_|=======================/_____: \\        / :__-'");
+	puts("\t\t       -----------'  '-____-'  `-------------------------------'  '-____-'");
 	
 	
-	gotoxy(20,15);
+	gotoxy(20,20);
 	for(int i = 0; credits[i]!=0; i++){
 		Sleep(5);
 		charToASCII(credits[i]);
 	}
 	
-	gotoxy(20,20);
+	gotoxy(20,25);
 	for(int i = 0; tekan[i]!=0; i++){
 		Sleep(5);
 		charToASCII(tekan[i]);
@@ -184,51 +193,59 @@ void mobilKeluar(int pilih){
 }
 
 void homepage(){
-    printf("|=================================================|\n");
-	printf("|          Silahkan Pilih Menu Dibawah :          |\n");
-	printf("|=================================================|\n");
-	printf("|                                                 |\n");
-    printf("| 1.  Tambah Mobil                                |\n");
-	printf("| 2.  Hapus Mobil                                 |\n");
-	printf("| 3.  Proses Mencuci (%d menit)                   |\n",durasiSimulasi);
-	printf("| 4.  Bantuan                                     |\n");
-	printf("| 5.  Selesai                                     |\n");
-	printf("| 6.  Skip (10 Menit)                             |\n");
-	printf("| 7.  Skip (15 Menit)                             |\n");
-	printf("| 8.  Skip (30 Menit)                             |\n");
-	printf("| 9.  Skip (45 Menit)                             |\n");
-	printf("| 10. Skip (60 Menit)                             |\n");
-    printf("|                                                 |\n");
-	printf("|=================================================|\n");
-	printf("|             Copyright 2022 - Wawash          |\n");
-	printf("|=================================================|\n");
-	printf("Masukan Index Menu Yang Dipilih :");
+    printf("\t\t\t\t|=================================================|\n");
+	printf("\t\t\t\t|          Silahkan Pilih Menu Dibawah :          |\n");
+	printf("\t\t\t\t|=================================================|\n");
+	printf("\t\t\t\t|                                                 |\n");
+    printf("\t\t\t\t| 1.  Tambah Mobil                                |\n");
+	printf("\t\t\t\t| 2.  Hapus Mobil                                 |\n");
+	printf("\t\t\t\t| 3.  Proses Mencuci (%d menit)                    |\n",durasiSimulasi);
+	printf("\t\t\t\t| 4.  Bantuan                                     |\n");
+	printf("\t\t\t\t| 5.  Selesai                                     |\n");
+	printf("\t\t\t\t| 6.  Skip (10 Menit)                             |\n");
+	printf("\t\t\t\t| 7.  Skip (15 Menit)                             |\n");
+	printf("\t\t\t\t| 8.  Skip (30 Menit)                             |\n");
+	printf("\t\t\t\t| 9.  Skip (45 Menit)                             |\n");
+	printf("\t\t\t\t| 10. Skip (60 Menit)                             |\n");
+    printf("\t\t\t\t|                                                 |\n");
+	printf("\t\t\t\t|=================================================|\n");
+	printf("\t\t\t\t|             Copyright 2023 - Wawash             |\n");
+	printf("\t\t\t\t|=================================================|\n");
+	printf("\t\t\t\t\tMasukan Index Menu Yang Dipilih : ");
 }
 
 void homepageRest(){
-    printf("|=================================================|\n");
-	printf("|          Silahkan Pilih Menu Dibawah :          |\n");
-	printf("|=================================================|\n");
-	printf("|                                                 |\n");
-	printf("| 3.  Simulasi waktu (%d menit)                   |\n",durasiSimulasi);
-    printf("|                                                 |\n");
-	printf("|=================================================|\n");
-	printf("|             Copyright 2022 -  Wawash          |\n");
-	printf("|=================================================|\n");
-	printf("Masukan Index Menu Yang Dipilih :");
+	printf("\n\n\n");
+    printf("\t\t\t\t|=================================================|\n");
+	printf("\t\t\t\t|          Silahkan Pilih Menu Dibawah :          |\n");
+	printf("\t\t\t\t|=================================================|\n");
+	printf("\t\t\t\t|                                                 |\n");
+	printf("\t\t\t\t|            WAWASH SEDANG ISTIRAHAT              |\n");
+	printf("\t\t\t\t|             BUKA LAGI PUKUL 13.00               |\n");
+	printf("\t\t\t\t|                                                 |\n");
+	printf("\t\t\t\t| 3.  Skip waktu (15 menit)                       |\n");
+    printf("\t\t\t\t|                                                 |\n");
+	printf("\t\t\t\t|=================================================|\n");
+	printf("\t\t\t\t|             Copyright 2023 -  Wawash            |\n");
+	printf("\t\t\t\t|=================================================|\n");
+	printf("\t\t\t\t\tMasukan Index Menu Yang Dipilih : ");
 }
 
 void homepageClosed(){
-    printf("|=================================================|\n");
-	printf("|          Silahkan Pilih Menu Dibawah :          |\n");
-	printf("|=================================================|\n");
-	printf("|                                                 |\n");
-	printf("| 10. Skip (60 Menit)                             |\n");
-    printf("|                                                 |\n");
-	printf("|=================================================|\n");
-	printf("|             Copyright 2022 - Wawash          |\n");
-	printf("|=================================================|\n");
-	printf("Masukan Index Menu Yang Dipilih :");
+	printf("\n\n\n");
+    printf("\t\t\t\t|=================================================|\n");
+	printf("\t\t\t\t|          Silahkan Pilih Menu Dibawah :          |\n");
+	printf("\t\t\t\t|=================================================|\n");
+	printf("\t\t\t\t|                                                 |\n");
+	printf("\t\t\t\t|                 WAWASH TUTUP                    |\n");
+	printf("\t\t\t\t|               DATANG BESOK PAGI                 |\n");
+	printf("\t\t\t\t|                                                 |\n");
+	printf("\t\t\t\t| 1. Buka Carwash                                 |\n");
+    printf("\t\t\t\t| 2. Exit                                         |\n");
+	printf("\t\t\t\t|=================================================|\n");
+	printf("\t\t\t\t|             Copyright 2023 - Wawash             |\n");
+	printf("\t\t\t\t|=================================================|\n");
+	printf("\t\t\t\tMasukan Index Menu Yang Dipilih : ");
 }
 
 void timeLeap(int i){
@@ -246,7 +263,6 @@ void wrongCommandAlert(){
     printf("Maaf Inputan Salah\n");
 	printf("Silahkan Tekan Enter Untuk Kembali...");
 	getchar();
-	system("cls");
 }
 
 int timeCheck(){
@@ -328,7 +344,7 @@ void statusNotification(char no_plat[], int tipeKendaraan){
 	int temp_waktu;
 
 	printf("\n");
-	printf("Mobil dengan Plat Nomor %s berhasil ditambahkan keantrian pada tempat cuci no - %d, perkiraan durasi pencucian",no_plat, antrean+1);
+	printf("Mobil dengan Plat Nomor: %s  \nTempat cuci mobil: %d \nDurasi pencucian : ",no_plat, antrean+1);
 
 	switch(tipeKendaraan){
 		case 1:
@@ -346,13 +362,13 @@ void statusNotification(char no_plat[], int tipeKendaraan){
 
 	switch(antrean){
 		case 0:
-			printf(" %d menit dan durasi antri sekitar",temp_waktu);
-			printf(" %d menit.\n",jumlahDurasi[0]);
+			printf("%d menit \nDurasi antri     : ",temp_waktu);
+			printf("%d menit\n",jumlahDurasi[0]);
 			break;
 
 		case 1:
-			printf(" %d menit dan durasi antri sekitar",temp_waktu);
-			printf(" %d menit.\n",jumlahDurasi[1]);
+			printf("%d menit \nDurasi antri     : ",temp_waktu);
+			printf("%d menit\n",jumlahDurasi[1]);
 			break;
 		
 	}
@@ -511,7 +527,7 @@ void enqueue(antrianCuci *data_inputan, antrianCuci *tempat, int pilihan){
 	}	
 }
 
-void help(){
+void bantuan(){
     printf("\n");
 	printf("BANTUAN PADA APLIKASI WaWASH (PANDUAN) : \n");
 	printf("> Tabel paling atas merupakan list antrian mobil beserta tempat pencuciannya \n");
@@ -710,7 +726,7 @@ void pegangNode(int tanda_tempat, char no_plat[]){
 			dequeue(no_plat,tempat2);
 			break;	
 	}
-	nextButton(); // MODUL UNTUK ALTERNATIF BY PASS	
+		
 }
 
 void dequeue(char no_plat[], antrianCuci *tempat){

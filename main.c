@@ -13,6 +13,7 @@ int main(){
 	loadingBar();
 	system("cls");
     while (inputan != 20){
+    system("cls");
     dataAntrian();
     timeCondition = timeCheck();
     if (timeCondition == 1){
@@ -21,6 +22,7 @@ int main(){
         switch (inputan)
         {
         case 1:
+            system("cls");
             insertCar();
             nextButton();
             break;
@@ -32,11 +34,12 @@ int main(){
             timeLeap(5);
             if(tempatCuci1 != NULL || tempatCuci2 != NULL){
             cekProgressMencuci(5);
+
             }
             nextButton();
             break;
         case 4:
-            help();
+            bantuan();
             nextButton();
             break;
         case 5:
@@ -89,13 +92,15 @@ int main(){
             break;
         }
     }
-    else if (timeCondition == 2){
+    else if (timeCondition == 2){\
+        system("cls");
+        timeConvert();
         homepageRest();
         scanf("%d", &inputan);
         switch (inputan)
         {
         case 3:
-            timeLeap(5);
+            timeLeap(15);
             nextButton();
             break;
         default:
@@ -105,13 +110,20 @@ int main(){
         }
     }
     else if (timeCondition == 3){
+        system("cls");
         homepageClosed();
         scanf("%d", &inputan);
         switch (inputan)
         {
-        case 10:
-            timeLeap(60);
+        case 1:
+            pukulWaktu = 0;
             nextButton();
+            break;
+        case 2:
+            printf("\n");
+            printf("\t\t\t\tTerimakasih telah menggunakan Wawash");
+            Sleep(5);
+            exit(1);
             break;
         default:
             wrongCommandAlert();

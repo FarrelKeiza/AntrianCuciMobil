@@ -25,8 +25,8 @@ void loadingBar();
 void title();
 void gotoxy (int x, int y);
 int jumlahDurasi[2];
-int pilihanDurasi[3] = {30,45,75};
-int pilihanHarga[3] = {10000,30000,50000};
+int pilihanDurasi[3] = {45,60,90};
+int pilihanHarga[3] = {30000,50000,75000};
 int durasiSimulasi = 5; // SIMULASI SKIP WAKTU DI SET 5 MENIT
 int durasi_jeda = 5; // SIMULASI JEDA WAKTU DI SET 5 MENIT SETIAP SELESAI MENCUCI
 int waktu_buka = 0; // DALAM MENIT
@@ -39,6 +39,7 @@ int jumlah_kendaraan;
 int jumlah_waktu;	
 int jumlah_harga;
 
+void bantuan();
 
 void homepage();
 
@@ -69,8 +70,6 @@ void durationCount();
 int carPlacement();
 
 void enqueue(antrianCuci *data_inputan, antrianCuci *tempat, int pilihan);
-
-void help();
 
 void dataAntrian();
 
