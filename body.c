@@ -624,7 +624,7 @@ void showJenis(){
 	printf("|==================================================================================================================|\n");
 	printf("|                                                    JENIS KENDARAAN                                               |\n");
 	printf("|==================================================================================================================|\n");
-	printf("| NO | JENIS | KETERANGAN  |                            SAMPEL                             |  DURASI  |    HARGA   |\n");
+	printf("| NO | JENIS | KETERANGAN  |                            SAMPEL                             |  DURASI  |    TARIF   |\n");
 	printf("| 1. |   A   | Mobil Kecil | KIA Picanto, Daihatsu Ceria, Suzuki Karimun, Toyota Yaris dll | %d menit | Rp. %d  |\n",pilihanDurasi[0], pilihanHarga[0]);
 	printf("| 2. |   B   | Minibus     | Toyota Avanza, Honda Freed, Suzuki Ertiga, dll                | %d menit | Rp. %d  |\n",pilihanDurasi[1], pilihanHarga[1]);
 	printf("| 3. |   C   | Mobil Besar | Metromini, Truk, dll                                          | %d menit | Rp. %d  |\n",pilihanDurasi[2], pilihanHarga[2]);
