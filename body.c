@@ -202,11 +202,9 @@ void homepage(){
 	printf("\t\t\t\t| 3.  Proses Mencuci (%d menit)                    |\n",durasiSimulasi);
 	printf("\t\t\t\t| 4.  Bantuan                                     |\n");
 	printf("\t\t\t\t| 5.  Selesai                                     |\n");
-	printf("\t\t\t\t| 6.  Skip (10 Menit)                             |\n");
-	printf("\t\t\t\t| 7.  Skip (15 Menit)                             |\n");
-	printf("\t\t\t\t| 8.  Skip (30 Menit)                             |\n");
-	printf("\t\t\t\t| 9.  Skip (45 Menit)                             |\n");
-	printf("\t\t\t\t| 10. Skip (60 Menit)                             |\n");
+	printf("\t\t\t\t| 6.  Cuci Mobil A                                |\n");
+	printf("\t\t\t\t| 7.  Cuci Mobil B                                |\n");
+	printf("\t\t\t\t| 8.  Cuci Mobil C                                |\n");
     printf("\t\t\t\t|                                                 |\n");
 	printf("\t\t\t\t|=================================================|\n");
 	printf("\t\t\t\t|             Copyright 2023 - Wawash             |\n");
@@ -288,7 +286,7 @@ void insertCar(){
         fflush(stdin);
 		printf("\n");
 		printf("Masukkan Nomor Polisi kendaraan : ");
-		scanf("%s", no_plat);
+		scanf(" %[^\n]", no_plat);
 		fflush(stdin);
 		break;
 
@@ -528,14 +526,28 @@ void enqueue(antrianCuci *data_inputan, antrianCuci *tempat, int pilihan){
 }
 
 void bantuan(){
-    printf("\n");
-	printf("BANTUAN PADA APLIKASI WaWASH (PANDUAN) : \n");
-	printf("> Tabel paling atas merupakan list antrian mobil beserta tempat pencuciannya \n");
-	printf("> ketik '1' pada menu untuk input kendaraan \n");
-	printf("> ketik '2' pada menu apabila ada kendaraan yang tidak jadi di cuci namun masih pada antrian \n");
-	printf("> ketik '3' pada menu untuk melakukan pencucian selama 5 menit ke depan \n");
-	printf("> ketik '4' pada menu untuk bantuan penggunaan aplikasi \n");
-	printf("> ketik '5' pada menu untuk keluar dari aplikasi \n");
+	printf("\n\n");
+	printf("\t\t\t|==========================================================================|\n");
+	printf("\t\t\t|                              PANDUAN WAWASH                              |\n");
+	printf("\t\t\t|==========================================================================|\n");
+	printf("\t\t\t|                                                                          |\n");
+    printf("\t\t\t| 1. Ketik angka 1 untuk menginputkan kendaraan yang ingin dicuci, jika    |\n");
+	printf("\t\t\t| tidak jadi menginputkan, ketik angka 0 untuk kembali ke main menu        |\n");
+	printf("\t\t\t| 2. Ketik angka 2 untuk menghapus antrian kendaraan                       |\n");
+	printf("\t\t\t| Note: Kendaraaan tidak dapat dihapus jika sedang proses pencucian        |\n");
+	printf("\t\t\t| 3. Ketik angka 3 untuk melakukan proses pencucian                        |\n");
+	printf("\t\t\t| Hal ini akan mengskip waktu selama 5 menit kedepan                       |\n");
+	printf("\t\t\t| 4. Ketik angka 5 untuk keluar dari program                               |\n");
+	printf("\t\t\t| Note: Tidak dapat keluar jika ada proses pencucian mobil                 |\n");
+    printf("\t\t\t| 5. Ketik angka 6, untuk mencuci Mobil tipe Jenis A (45 menit)            |\n");
+	printf("\t\t\t| 6. Ketik angka 7, untuk mencuci Mobil tipe Jenis A (60 menit)            |\n");
+	printf("\t\t\t| 7. Ketik angka 8, untuk mencuci Mobil tipe Jenis A (90 menit)            |\n");
+	printf("\t\t\t|                                                                          |\n");
+	printf("\t\t\t|==========================================================================|\n");
+	printf("\t\t\t|                          Copyright 2023 - Wawash                         |\n");
+	printf("\t\t\t|==========================================================================|\n");
+	printf("\n\n");
+    printf("\t\t\t\t\t\tTekan Apapun Untuk Melanjutkan!");
 }
 
 void dataAntrian(){
@@ -746,7 +758,6 @@ void dequeue(char no_plat[], antrianCuci *tempat){
 }
 
 void cekProgressMencuci(int durasiPilihan){
-	pukulWaktu += durasiSimulasi;
 
 	if(tempatCuci1 != NULL){
 		if(tempatCuci1->durasi != 0){ // CEK APAKAH DURASI DI 1 SUDAH 0 ATAU BELUM

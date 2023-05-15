@@ -8,10 +8,10 @@
 int main(){
     int inputan = 0;
     int timeCondition;
-    title();
-	system("cls");
-	loadingBar();
-	system("cls");
+    // title();
+	// system("cls");
+	// loadingBar();
+	// system("cls");
     while (inputan != 20){
     system("cls");
     dataAntrian();
@@ -39,8 +39,10 @@ int main(){
             nextButton();
             break;
         case 4:
+            system("cls");
             bantuan();
-            nextButton();
+            getchar();
+            getchar();
             break;
         case 5:
             if (tempatCuci1 != NULL || tempatCuci2 != NULL){
@@ -52,37 +54,23 @@ int main(){
             }
             break;
         case 6:
-            timeLeap(10);
-            if(tempatCuci1 != NULL || tempatCuci2 != NULL){
-            cekProgressMencuci(10);
-            }
-            nextButton();
-            break;
-        case 7:
-            timeLeap(15);
-            if(tempatCuci1 != NULL || tempatCuci2 != NULL){
-            cekProgressMencuci(15);
-            }
-            nextButton();
-            break;
-        case 8:
-            timeLeap(30);
-            if(tempatCuci1 != NULL || tempatCuci2 != NULL){
-            cekProgressMencuci(30);
-            }
-            nextButton();
-            break;
-        case 9:
             timeLeap(45);
             if(tempatCuci1 != NULL || tempatCuci2 != NULL){
             cekProgressMencuci(45);
             }
             nextButton();
             break;
-        case 10:
+        case 7:
             timeLeap(60);
             if(tempatCuci1 != NULL || tempatCuci2 != NULL){
             cekProgressMencuci(60);
+            }
+            nextButton();
+            break;
+        case 8:
+            timeLeap(90);
+            if(tempatCuci1 != NULL || tempatCuci2 != NULL){
+            cekProgressMencuci(90);
             }
             nextButton();
             break;
